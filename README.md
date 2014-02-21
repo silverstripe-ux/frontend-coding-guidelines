@@ -13,6 +13,24 @@
 
 Never lose site of the end result **"What will provide the best user experience"**. The technology used won't necessarily impact the user but the way the technology is executed will. Be thorough and always think from the users point of view.
 
+##Contents
+
+* [CSS and SASS](#css-and-sass)  
+ * [Make CSS manageable](#make-css-manageable)
+ * [Make CSS modular](#make-css-modular)
+ * [Make CSS consistent](#make-css-consistent)
+ * [Frameworks](#frameworks)
+* [Templates](#templates)
+ * [General](#general) 
+ * [Structure](#structure)
+* [JavaScript](#javascript)
+ * [Boilerplate](#boilerplate) 
+ * [Coding Guidelines](#coding-guidelines) 
+ * [Testing](#testing) 
+* [Style Guidelines](#style-guidelines)
+* [Project Setup](#project-setup)
+* [Internal](#internal)
+
 ## CSS and SASS
 
 THREE GUIDING PRINCIPLES FOR CSS
