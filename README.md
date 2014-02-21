@@ -313,7 +313,7 @@ Your code should be wrapped in a closure to avoid polluting the global namespace
     });
     
 
-    Note: This will delay "//Code" execution until DOM ready. You may not need to delay all javascript execution in this way. 
+Note: This will delay "//Code" execution until DOM ready. You may not need to delay all javascript execution in this way. 
 
 ### Coding guidelines
 
