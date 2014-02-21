@@ -1,4 +1,4 @@
-# SilverStripe Front-end Coding Guidelines
+# Frontend coding guidelines
 
 *This document will*
 
