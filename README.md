@@ -21,7 +21,7 @@ THREE GUIDING PRINCIPLES FOR CSS
 2. Make it modular
 3. Make it consistent
 
-## Make CSS manageable
+### Make CSS manageable
 
 **1. Don’t use !important or IDs in your CSS**
 
@@ -72,7 +72,7 @@ SASS:
         }
     }
 
-**5. Class based browser hacks with original context**
+**5. Class based browser hacks with original context**  
 Use class based IE overrides, and keep the IE overrides inline with the component code. This makes it easier to maintain IE css when a feature is changed. 
 
 HTML:
@@ -90,8 +90,8 @@ SASS:
     		// Regular styles
     		.ie8 &{
     			// IE8 specific overrides for .feature
-        }
-      }
+             }
+    	}
 
 CSS:
 
@@ -100,13 +100,13 @@ CSS:
 
 
 
-## Make CSS modular
+### Make CSS modular
 
 **1. Split CSS into components**
 
 Components can exist within components. For example header and nav-main may be separate components even though nav-main only occurs in header. Each component name must be unique and descriptive.
 
-*"We’re not designing pages, we’re designing systems of components."** **—**[Stephen Ha*y](http://bradfrostweb.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/)
+*"We’re not designing pages, we’re designing systems of components." — [Stephen Hay](http://bradfrostweb.com/blog/mobile/bdconf-stephen-hay-presents-responsive-design-workflow/) **
 
 The goal of components is easily identifiable, manageable, and reusable code. Management of a component is directly correlated to number of lines, e.g 1000 lines is too much, 500 is pushing it.
 
@@ -128,7 +128,7 @@ is better than
 
     <a href="btn-secondary-large"></a>
 
-**3. Pages or page types are not components. **
+**3. Pages or page types are not components.**
 
 Do not put classes on the body element or similar in order to style a page. This approach should only be used in rare circumstances. 
 
@@ -150,11 +150,11 @@ Styles that are reused across multiple components should be defined outside a co
 
 Nesting components will happen so we need to make sure that the outer component doesn't needlessly effect the inner component's style.
 
-## Make CSS consistent
+### Make CSS consistent
 
 Having consistent rules which each developer abides by means that teams can quickly scale without introducing confusion about how a component works.
 
-**1) Use Mixins sparingly - know when to use @extends or components. **
+**1) Use Mixins sparingly - know when to use @extends or components.**
 
 Mixins can bloat the CSS, consider carefully when you use them. If your mixin is above 5 lines of CSS then it should probably just be a component, or part of a component. Using mixins for rounded-corners, drop-shadows etc is a perfectly good use case. 
 
@@ -198,7 +198,7 @@ If you are using a css framework, mimic the framework where possible. If you are
 
 Just convention. So long as the css is consistently the same, the separator doesn’t matter. If you have a framework, use the same style of selector used there.
 
-## Frameworks
+### Frameworks
 
 Work with your framework, not against it. If you are new to the framework, take a look around and find out what it can do. Try to use the components within a framework before creating your own. Even if you know a framework well, always look at it again before making your own component - it might do something that could do half the work for you. Where possible, copy the style conventions of the framework you are using. Try to keep changes to the original framework to a minimum. Removing styles not needed is ok, but any theming should be done within your own component files.
 
@@ -266,7 +266,7 @@ Different frameworks do grids differently. Before you start building the scaffol
 
 ### Structure
 
-**Use as few html tags as possible. **
+**Use as few html tags as possible.**
 
 Your html shouldn’t exist just to serve design features. Sometimes this is unavoidable, but if you keep this rule in mind your html will come out cleaner. 
 
@@ -315,7 +315,7 @@ Your code should be wrapped in a closure to avoid polluting the global namespace
 
     Note: This will delay "//Code" execution until DOM ready. You may not need to delay all javascript execution in this way. 
 
-## Coding guidelines
+### Coding guidelines
 
 1. if/else/for/while/try statements** always** have braces and always go on multiple lines. 
 
@@ -347,17 +347,16 @@ Testing JavaScript really all depends on what framework you are using.
 
 Contemporary JavaScript Unit Testing Boilerplate: [https://github.com/wrumsby/js-testing-boilerplate](https://github.com/wrumsby/js-testing-boilerplate).
 
-## General style guidelines
+## Style guidelines
 
 * { on same line as selector
 * Properties on new line, even if it's a single property.
 * 1 line between rules
 * JS files that aren't minified should be *.js and minified should be *.min.js
-
 * Comment scss component files to say what the component is and examples of where it is used
 * Unless there is a reason to do otherwise, @extends come first, @mixins go next, then attribute styles. Attribute modifiers (including responsive) go after attribute styles. Nested attributes go after attribute modifiers
 
-* Recommended (but should not fail peer review)*
+*Recommended (but should not fail peer review)*
 
 * Space between rule and brace (.asd { NOT .asd{)
 * Properties in alphabetical order. This helps reduce the chance of double declaring a property and helps readability.
@@ -389,13 +388,13 @@ Contemporary JavaScript Unit Testing Boilerplate: [https://github.com/wrumsby/js
 
 Git repo [https://github.com/silverstripe-ux/frontend-coding-guidelines](https://github.com/silverstripe-ux/frontend-coding-guidelines)
 
-## Testing
+### Testing
 
-[http://www.webpagetest.org/](http://www.webpagetest.org/)
-[http://validator.w3.org/](http://validator.w3.org/)
-[http://wave.webaim.org/](http://wave.webaim.org/)
-[https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/](https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/)
-[http://www.totalvalidator.com/](http://www.totalvalidator.com/)
+[http://www.webpagetest.org/](http://www.webpagetest.org/)  
+[http://validator.w3.org/](http://validator.w3.org/)  
+[http://wave.webaim.org/](http://wave.webaim.org/)  
+[https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/](https://addons.mozilla.org/en-US/firefox/addon/accessibility-evaluation-toolb/)  
+[http://www.totalvalidator.com/](http://www.totalvalidator.com/)  
 
 ## Internal
 
